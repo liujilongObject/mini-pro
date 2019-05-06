@@ -1,0 +1,15 @@
+/** 
+  * global mixin
+  */
+  
+/* 清除浮动 */
+@mixin clearfix {
+  &::after {
+    display: block;
+    content: "";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+  zoom:1;
+}
